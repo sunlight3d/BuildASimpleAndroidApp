@@ -1,4 +1,4 @@
-package com.example.myapp;
+package com.example.myapp.com.example.myapp.models;
 
 public class Place {
     private String placeName;

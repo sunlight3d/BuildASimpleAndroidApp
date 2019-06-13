@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.myapp.com.example.myapp.models.Place;
+
 import java.util.ArrayList;
 
 public class PlacesAdapter extends RecyclerView.Adapter<PlaceItemView> {

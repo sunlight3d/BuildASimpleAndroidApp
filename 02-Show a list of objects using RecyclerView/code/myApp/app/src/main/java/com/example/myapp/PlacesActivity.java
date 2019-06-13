@@ -1,12 +1,11 @@
 package com.example.myapp;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.TextView;
+
+import com.example.myapp.com.example.myapp.models.Place;
 
 import java.util.ArrayList;
 
