@@ -7,6 +7,12 @@ import android.widget.TextView;
 public class PlaceItemView extends RecyclerView.ViewHolder {
     public TextView txtPlaceName;
     public TextView txtDescription;
+    private PlacesActivity placesActivity;
+
+    public void setPlacesActivity(PlacesActivity placesActivity) {
+        this.placesActivity = placesActivity;
+    }
+
     public PlaceItemView(View view) {
         super(view);
         txtPlaceName = (TextView) view.findViewById(R.id.txtPlaceName);
@@ -14,8 +20,7 @@ public class PlaceItemView extends RecyclerView.ViewHolder {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Integer currentPosition = getLayoutPosition();
-                //navigate to "detail place"
+                PlaceItemView.this.placesActivity.navigateToDetailPlace(getLayoutPosition());
             }
         });
     }
