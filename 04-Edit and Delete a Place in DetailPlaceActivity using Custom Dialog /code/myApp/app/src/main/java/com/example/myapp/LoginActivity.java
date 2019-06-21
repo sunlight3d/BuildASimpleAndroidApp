@@ -3,7 +3,6 @@ package com.example.myapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -11,9 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class LoginActivity extends Activity {
     public static final String emailPattern = "[a-zA-Z0-9._-]+@[a-zA-Z]+\\.+[a-z]{2,}";
     private EditText txtEmail;
     private EditText txtPassword;
@@ -24,7 +22,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         //Map properties in .xml file
         txtEmail = (EditText) findViewById(R.id.txtEmail);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
@@ -41,7 +39,7 @@ public class MainActivity extends Activity {
                 }
                 */
                 //Do something like "Navigate to second Activity"
-                Intent intent = new Intent(MainActivity.this, PlacesActivity.class);
+                Intent intent = new Intent(LoginActivity.this, PlacesActivity.class);
                 intent.putExtra("email", txtEmail.getText().toString().trim());
                 startActivity(intent);
             }
