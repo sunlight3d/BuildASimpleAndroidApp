@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.UUID;
 
 @Controller
 @RequestMapping(path="/users") //http://localhost:8081/users/
@@ -35,7 +36,8 @@ public class UserController {
                 return response;
             }
         }
-        User newUser = new User(name, email, userType, password);
+        String userId = UUID.randomUUID().toString();
+        User newUser = new User(userId, name, email, userType, password);
         userRepository.save(newUser);//insert to MySQL Database
         response.put("result", "ok");
         response.put("data", newUser);

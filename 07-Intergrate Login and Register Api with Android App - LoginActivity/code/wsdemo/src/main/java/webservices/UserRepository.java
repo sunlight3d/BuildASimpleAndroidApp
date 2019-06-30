@@ -17,12 +17,15 @@ public interface UserRepository extends CrudRepository<User, Integer> {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private Integer id;
+        //Fix "null id" in Spring
+        private String userId;
         private String name;
         private String email;
         private String userType; //facebook / default
         private String password;//You should save encrypted password
 
-        public User(String name, String email, String userType, String password) {
+        public User(String userId, String name, String email, String userType, String password) {
+            this.userId = userId;
             this.name = name;
             this.email = email;
             this.userType = userType;
@@ -35,6 +38,14 @@ public interface UserRepository extends CrudRepository<User, Integer> {
 
         public void setId(Integer id) {
             this.id = id;
+        }
+
+        public void setUserId(String userId) {
+            this.userId = userId;
+        }
+
+        public String getUserId() {
+            return userId;
         }
 
         public String getName() {

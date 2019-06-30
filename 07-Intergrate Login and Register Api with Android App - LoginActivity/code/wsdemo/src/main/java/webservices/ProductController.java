@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.UUID;
 
 @Controller
 @RequestMapping(path="/products") //http://localhost:8081/products
@@ -18,10 +19,11 @@ public class ProductController {
                                               @RequestParam Integer productYear,
                                               @RequestParam Double price,
                                               @RequestParam String productDescription,
-                                              @RequestParam Integer userId
+                                              @RequestParam String userId
                                               ) {
         Hashtable<String, Object> response = new Hashtable<>();
-        Product newProduct = new Product(productName, productYear, price,
+        String productId = UUID.randomUUID().toString();
+        Product newProduct = new Product(productId, productName, productYear, price,
                 productDescription,userId);
         productRepository.save(newProduct);
         response.put("result", "ok");
@@ -30,7 +32,7 @@ public class ProductController {
         return response;
     }
     @GetMapping(path="/all")//GET http://localhost:8081/products/all
-    public @ResponseBody Hashtable getAllProducts(@RequestParam Integer userId) {
+    public @ResponseBody Hashtable getAllProducts(@RequestParam String userId) {
         Hashtable<String, Object> response = new Hashtable<>();
         List<ProductRepository.Product> products = productRepository.findByUserId(userId);
         response.put("result", "ok");
@@ -40,18 +42,25 @@ public class ProductController {
     }
     //find Product by ID ?
     @GetMapping(path = "/detailProduct") //GET http://localhost:8081/products/detailProduct
-    public @ResponseBody Hashtable getDetailProduct(@RequestParam Integer id) {
+    public @ResponseBody Hashtable getDetailProduct(@RequestParam String productId) {
         Hashtable<String, Object> response = new Hashtable<>();
         try {
-            Product detailProduct = productRepository.findById(id).get();
-            response.put("result", "ok");
-            response.put("data", detailProduct);
-            response.put("message", "Query products successfully");
+            ProductRepository.Product detailProduct = productRepository.findByProductId(productId);
+            if(detailProduct == null) {
+                response.put("result", "failed");
+                response.put("data", "");
+                response.put("message", "Cannot find product with id = "+productId);
+            } else {
+                response.put("result", "ok");
+                response.put("data", detailProduct);
+                response.put("message", "Query products successfully");
+            }
 
-        } catch (NoSuchElementException e) {
+
+        } catch (Exception e) {
             response.put("result", "failed");
             response.put("data", "");
-            response.put("message", "Cannot find product with id = "+id);
+            response.put("message", "Error:"+e.toString());
         } finally {
             return response;
         }

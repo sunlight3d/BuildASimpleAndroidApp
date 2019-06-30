@@ -12,12 +12,15 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    //Fix "null id" in Spring
+    private String userId;
     private String name;
     private String email;
     private String userType; //facebook / default
     private String password;//You should save encrypted password
 
-    public User(String name, String email, String userType, String password) {
+    public User(String userId, String name, String email, String userType, String password) {
+        this.userId = userId;
         this.name = name;
         this.email = email;
         this.userType = userType;
@@ -31,6 +34,14 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     public String getName() {
