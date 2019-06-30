@@ -64,9 +64,16 @@ public class UserController {
                 }
             } else {
                 User foundUser = userRepository.findByEmailAndPassword(email, password);
-                response.put("result", "ok");
-                response.put("data", foundUser);
-                response.put("message", "Login user successfully");
+                if(foundUser != null) {
+                    response.put("result", "ok");
+                    response.put("data", foundUser);
+                    response.put("message", "Login user successfully");
+                } else {
+                    response.put("result", "failed");
+                    response.put("data", "");
+                    response.put("message", "Cannot find user");
+                }
+
             }
 
         } catch (NoSuchElementException e) {
