@@ -15,7 +15,6 @@ public class Product {
     private String productDescription;
     //"Foreign key"
     private Integer userId;
-
     public Product(String productName, Integer productYear, Double price,
                    String productDescription, Integer userId) {
         this.productName = productName;
@@ -24,7 +23,7 @@ public class Product {
         this.productDescription = productDescription;
         this.userId = userId;
     }
-
+    public Product() {}
     public Integer getId() {
         return id;
     }
