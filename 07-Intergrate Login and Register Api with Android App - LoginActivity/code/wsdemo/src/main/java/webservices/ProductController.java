@@ -34,7 +34,7 @@ public class ProductController {
     @GetMapping(path="/all")//GET http://localhost:8081/products/all
     public @ResponseBody Hashtable getAllProducts(@RequestParam String userId) {
         Hashtable<String, Object> response = new Hashtable<>();
-        List<ProductRepository.Product> products = productRepository.findByUserId(userId);
+        List<Product> products = productRepository.findByUserId(userId);
         response.put("result", "ok");
         response.put("data", products);
         response.put("message", "Query products successfully");
@@ -45,7 +45,7 @@ public class ProductController {
     public @ResponseBody Hashtable getDetailProduct(@RequestParam String productId) {
         Hashtable<String, Object> response = new Hashtable<>();
         try {
-            ProductRepository.Product detailProduct = productRepository.findByProductId(productId);
+            Product detailProduct = productRepository.findByProductId(productId);
             if(detailProduct == null) {
                 response.put("result", "failed");
                 response.put("data", "");

@@ -22,7 +22,7 @@ public class UserController {
                                                 @RequestParam String password) {
         Hashtable<String, Object> response = new Hashtable<>();
         //check dublicate user
-        List<UserRepository.User> foundUsers = userRepository.findByEmail(email);
+        List<User> foundUsers = userRepository.findByEmail(email);
         if(foundUsers.size() > 0) {
             if(userType.equals("facebook")) {
                 response.put("result", "ok");
@@ -52,7 +52,7 @@ public class UserController {
         Hashtable<String, Object> response = new Hashtable<>();
         try {
             if(userType.equals("facebook")) {
-                List<UserRepository.User> foundUsers = userRepository.findByEmail(email);
+                List<User> foundUsers = userRepository.findByEmail(email);
                 if(foundUsers.size() > 0) {
                     response.put("result", "ok");
                     response.put("data", foundUsers.get(0));
@@ -63,7 +63,7 @@ public class UserController {
                     response.put("message", "Cannot find user");
                 }
             } else {
-                UserRepository.User foundUser = userRepository.findByEmailAndPassword(email, password);
+                User foundUser = userRepository.findByEmailAndPassword(email, password);
                 response.put("result", "ok");
                 response.put("data", foundUser);
                 response.put("message", "Login user successfully");
