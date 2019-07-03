@@ -14,7 +14,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.myapp.Server.Server;
+import com.example.myapp.com.example.myapp.models.User;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -32,7 +35,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class LoginActivity extends Activity implements IMyActivity{
+public class LoginActivity extends Activity implements IMyActivity, IWebService{
     public static final String emailPattern = "[a-zA-Z0-9._-]+@[a-zA-Z]+\\.+[a-z]{2,}";
     private static String TAG_FACEBOOK_LOGIN = "Facebook Login";
     private EditText txtEmail;
@@ -53,7 +56,7 @@ public class LoginActivity extends Activity implements IMyActivity{
         setupUI();
         setupActions();
         setupLoginFacebook();
-        //checkLogin();
+        checkLogin();
     }
 
     @Override
@@ -67,19 +70,12 @@ public class LoginActivity extends Activity implements IMyActivity{
 
     @Override
     public void setupActions() {
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                /*
-                if(!isValidEmail) {
-                    Toast.makeText(getApplicationContext(),"Validate email failed",
-                            Toast.LENGTH_LONG).show();
-                    return;
-                }
-                */
-                //Call loginApi here !
-                navigateToPlacesActivity();
-            }
+        btnLogin.setOnClickListener(view -> {
+            Server server = new Server(this);
+            server.loginWithEmailAndPassword(
+                    txtEmail.getText().toString().trim(),
+                    txtPassword.getText().toString()
+                    );
         });
 
         //validation
@@ -138,22 +134,29 @@ public class LoginActivity extends Activity implements IMyActivity{
         Intent intent = new Intent(LoginActivity.this, PlacesActivity.class);
         startActivity(intent);
     }
-    private void saveUserInfor(FirebaseUser facebookUser) {
+    private void saveUserInfor(Object user) {
         SharedPreferences sharedPreferences = this.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-
-        if(facebookUser != null) {
-            String userId = facebookUser.getUid();
-            String email = facebookUser.getEmail();
-            editor.putString("userId", userId);
-            editor.putString("email", email);
-            editor.putString("userType", "facebook");
+        if(user instanceof FirebaseUser) {
+            FirebaseUser facebookUser = (FirebaseUser)user;
+            if(facebookUser != null) {
+                String userId = facebookUser.getUid();
+                String email = facebookUser.getEmail();
+                editor.putString("userId", userId);
+                editor.putString("email", email);
+                editor.putString("userType", "facebook");
+                editor.putInt("isLoggedIn", 1);
+            } else {
+                editor.putString("userId", "");
+                editor.putString("email", "");
+                editor.putString("userType", "");
+                editor.putInt("isLoggedIn", 0);
+            }
+        } else if(user instanceof User) {
+            editor.putString("userId", ((User) user).getUserId());
+            editor.putString("email", ((User) user).getEmail());
+            editor.putString("userType", "default");
             editor.putInt("isLoggedIn", 1);
-        } else {
-            editor.putString("userId", "");
-            editor.putString("email", "");
-            editor.putString("userType", "");
-            editor.putInt("isLoggedIn", 0);
         }
         editor.commit();
     }
@@ -185,5 +188,17 @@ public class LoginActivity extends Activity implements IMyActivity{
                 saveUserInfor(null);
             }
         });
+    }
+
+    @Override
+    public void getResponse(Object responseObject, String errorMessage) {
+        if(errorMessage != null) {
+            Toast.makeText(this, "Cannot login. Error"+errorMessage,Toast.LENGTH_LONG).show();
+            return;
+        }
+        if(responseObject instanceof User) {
+            saveUserInfor(responseObject);
+            navigateToPlacesActivity();
+        }
     }
 }

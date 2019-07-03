@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d6cada1-babe-4fa1-a288-95657ecc1201" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../myApp/app/src/main/java/com/example/myapp/IWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myApp/app/src/main/java/com/example/myapp/Server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myApp/app/src/main/java/com/example/myapp/Server/ServerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myApp/app/src/main/java/com/example/myapp/com/example/myapp/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../05-Connect Firebase and create LoginButton with Facebook/code/myApp/app/src/main/java/com/example/myapp/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../05-Connect Firebase and create LoginButton with Facebook/code/myApp/app/src/main/java/com/example/myapp/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/androidTest/java/com/example/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/DetailPlaceActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/EditPlaceDialog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/IMyActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlaceItemView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlacesActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlacesAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/com/example/myapp/models/Place.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_detail_place.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_places.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/edit_place.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/place_item_view.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/my_room.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/app/src/test/java/com/example/myapp/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/myApp/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_test_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_web_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_test_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_tx_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/java/webservices/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login and Register Api with Android App - LoginActivity/code/wsdemo/target/classes/application.properties" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.9.RELEASE/734111754bd8be5277a0be4f357479ee8e1c14e9/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.9.RELEASE/734111754bd8be5277a0be4f357479ee8e1c14e9/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/Repository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservices/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>persistence</find>
+      <find>mysql-connector-java</find>
+      <find>org.springframework</find>
+      <find>etId(</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/ProductRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="7" />
+    <option name="y" value="23" />
+    <option name="width" value="1924" />
+    <option name="height" value="1059" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="webservices.Application" />
+      <module name="wsdemo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webservices.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d6cada1-babe-4fa1-a288-95657ecc1201" name="Default Changelist" comment="" />
+      <created>1561693756905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561693756905</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="7" y="23" width="1924" height="1059" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18172157" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Project Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Job Explorer" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21303" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2564633" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.17683557" />
+      <window_info anchor="bottom" id="Console" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.28115264" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Gradle" order="8" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/webservices/UserController.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/webservices/UserController.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java" />
+    <entry file="file://$PROJECT_DIR$/gs-mysql-data.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/List.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.8.RELEASE/4e19ca13005f5175b8cf87c0d3a0df681d2e55c/spring-web-5.1.8.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="205" column="60" lean-forward="true" selection-start-line="205" selection-start-column="60" selection-end-line="205" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.9.RELEASE/734111754bd8be5277a0be4f357479ee8e1c14e9/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="68" column="24" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#847#848#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1602#1603#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="45" column="74" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.1.9.RELEASE/734111754bd8be5277a0be4f357479ee8e1c14e9/spring-data-commons-2.1.9.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>wsdemo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
