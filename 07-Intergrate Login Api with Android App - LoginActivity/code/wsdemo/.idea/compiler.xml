@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wsdemo" />
+        <module name="gs-mysql-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="code.wsdemo.main" target="1.8" />
+      <module name="code.wsdemo.test" target="1.8" />
+      <module name="gs-mysql-data" target="1.8" />
       <module name="wsdemo" target="1.8" />
       <module name="wsdemo.main" target="1.8" />
       <module name="wsdemo.test" target="1.8" />
@@ -17,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gs-mysql-data" options="-parameters" />
       <module name="wsdemo" options="-parameters" />
     </option>
   </component>
