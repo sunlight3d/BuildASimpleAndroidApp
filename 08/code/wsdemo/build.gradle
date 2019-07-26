@@ -10,6 +10,8 @@ plugins {
     id 'groovy'
     id 'java'
 }
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
 group 'wsdemo'
 version '1.0-SNAPSHOT'
