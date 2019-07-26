@@ -1,12 +1,11 @@
 package database;
 
 import javax.xml.crypto.Data;
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 import java.util.Properties;
 import com.mysql.jdbc.Driver;
 
-public class Database {
+public class Database implements IUserModel{
 
     private final String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
     private final String DATABASE_URL = "jdbc:mysql://localhost:3306/wstutorials";
@@ -21,6 +20,7 @@ public class Database {
     public static final Database getInstance() {
         if(instance == null) {
             instance = new Database();
+            instance.createTableUser();
         }
         return instance;
     }
@@ -38,5 +38,36 @@ public class Database {
             return null;
         }
     }
+    private void disconnect() {
+        try {
+            connection.close();
+        }catch (Exception e) {
 
+        } finally {
+            connection = null;
+        }
+
+    }
+
+    @Override
+    public void login(String email, String password, String userType) {
+
+    }
+
+    @Override
+    public void register(String email, String name, String password, String userType) {
+
+    }
+
+    @Override
+    public void createTableUser() {
+        try {
+            String sql = IUserModel.sqlCreateUserTable;
+            PreparedStatement preparedStatement = this.getConnection().prepareStatement(sql);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e) {
+            System.out.println(String.format("Cannot create table User. Error: %s", e.toString()));
+        }
+
+    }
 }
