@@ -55,7 +55,18 @@ public class Database implements IUserModel{
     }
 
     @Override
-    public void register(String email, String name, String password, String userType) {
+    public void register(String email, String name, String password, String imageUrl, String userType) {
+        try {
+            PreparedStatement preparedStatement = this.getConnection().prepareStatement(IUserModel.sqlInsertUser);
+            preparedStatement.setString(1, email);
+            preparedStatement.setString(2, name);
+            preparedStatement.setString(3, password);
+            preparedStatement.setString(4, imageUrl);
+            preparedStatement.setString(5, userType);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e) {
+            System.out.println(String.format("Cannot insert user.Error: %s", e.toString()));
+        }
 
     }
 

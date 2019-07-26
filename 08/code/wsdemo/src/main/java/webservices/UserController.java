@@ -29,7 +29,7 @@ public class UserController {
                                               @RequestParam(value="imageUrl", defaultValue="") String imageUrl,
                                               @RequestParam(value="userType", defaultValue="default") String userType
                                               ) {
-        Database database = Database.getInstance();
+        Database.getInstance().register(email, name, password, imageUrl, userType);
         Hashtable hashtable = new Hashtable();
         hashtable.put("result", "ok");
         hashtable.put("data", "");

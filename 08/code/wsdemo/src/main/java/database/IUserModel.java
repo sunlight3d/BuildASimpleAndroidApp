@@ -14,9 +14,16 @@ public interface IUserModel {
             "    name varchar(500),\n" +
             "    email varchar(500) NOT NULL,\n" +
             "    password varchar(500) NOT NULL,\n" +
+            "    imageUrl text,\n" +
             "    userType varchar(255) DEFAULT 'default'\n" +
             ")";
+    public static final String sqlInsertUser = "INSERT INTO tblUser(email,name, password, imageUrl, userType) \n" +
+            "    VALUES(?,?,?,?,?) \n";//SQL injection
+
     public void createTableUser();
-    public void register(String email, String name, String password, String userType);
+    public void register(String email, String name, String password, String imageUrl, String userType);
     public void login(String email,String password, String userType);
 }
+
+
+
