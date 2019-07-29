@@ -61,7 +61,9 @@ public class LoginActivity extends Activity implements IMyActivity, IWebService{
 
     @Override
     public void setupUI() {
+
         txtEmail = (EditText) findViewById(R.id.txtEmail);
+
         txtPassword = (EditText) findViewById(R.id.txtPassword);
         txtValidate = (TextView)findViewById(R.id.txtValidate);
         btnLogin = (Button)findViewById(R.id.btnLogin);
@@ -71,11 +73,7 @@ public class LoginActivity extends Activity implements IMyActivity, IWebService{
     @Override
     public void setupActions() {
         btnLogin.setOnClickListener(view -> {
-            Server server = new Server(this);
-            server.loginWithEmailAndPassword(
-                    txtEmail.getText().toString().trim(),
-                    txtPassword.getText().toString()
-                    );
+            //do something
         });
 
         //validation

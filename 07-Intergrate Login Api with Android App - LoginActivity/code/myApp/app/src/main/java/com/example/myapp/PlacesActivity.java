@@ -27,9 +27,14 @@ public class PlacesActivity extends Activity {
         placesRecyclerView = findViewById(R.id.placesRecyclerView);
         //fake data
 
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 11));
-        placesData.add(new Place("ABC park", "An exciting park", 22));
-        placesData.add(new Place("XY place", "An good park", 33));
+        placesData.add(new Place("Hoan Kiem Lake", 
+                        "This is a beautiful place", 11));
+        placesData.add(new Place("ABC park", 
+                        "An exciting park", 22));
+        placesData.add(new Place("XY place", 
+            "An good park", 33));
+
+
         placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 44));
         placesData.add(new Place("ABC park", "An exciting park", 55));
         placesData.add(new Place("XY place", "An good park", 66));
@@ -46,12 +51,15 @@ public class PlacesActivity extends Activity {
         placesData.add(new Place("ABC park", "An exciting park", 777));
         placesData.add(new Place("XY place", "An good park", 888));
 
-
         placesAdapter = new PlacesAdapter(placesData);
-        ((PlacesAdapter) placesAdapter).setPlacesActivity(this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(),
-                LinearLayoutManager.VERTICAL, false);
         placesRecyclerView.setAdapter(placesAdapter);
+
+        ((PlacesAdapter) placesAdapter).setPlacesActivity(this);
+
+        RecyclerView.LayoutManager layoutManager = new 
+                LinearLayoutManager(getApplicationContext(),
+                LinearLayoutManager.VERTICAL, false);
+        
         placesRecyclerView.setLayoutManager(layoutManager);
     }
     public void navigateToDetailPlace(Integer position) {

@@ -13,7 +13,9 @@ public class PlacesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_places);
+
         txtInfo = (TextView) findViewById(R.id.txtInfo);
+        
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
             String email = extras.getString("email");

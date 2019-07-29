@@ -10,7 +10,8 @@ import com.example.myapp.com.example.myapp.models.Place;
 
 import java.util.ArrayList;
 
-public class PlacesAdapter extends RecyclerView.Adapter<PlaceItemView> {
+public class PlacesAdapter extends 
+        RecyclerView.Adapter<PlaceItemView> {
     private ArrayList<Place> placesData;
     private PlacesActivity placesActivity;
     //constructor

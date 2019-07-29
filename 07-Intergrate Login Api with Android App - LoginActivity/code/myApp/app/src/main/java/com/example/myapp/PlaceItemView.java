@@ -4,7 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-public class PlaceItemView extends RecyclerView.ViewHolder {
+public class PlaceItemView extends 
+            RecyclerView.ViewHolder {
     public TextView txtPlaceName;
     public TextView txtDescription;
     private PlacesActivity placesActivity;
