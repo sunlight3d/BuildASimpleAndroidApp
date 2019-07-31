@@ -1,12 +1,14 @@
 package database;
 
-import javax.xml.crypto.Data;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
-import com.mysql.jdbc.Driver;
+
+import models.Place;
 import models.User;
 
-public class Database implements IUserModel{
+public class Database implements IUserModel, IPlaceModel{
 
     private final String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
     private final String DATABASE_URL = "jdbc:mysql://localhost:3306/wstutorials";
@@ -114,6 +116,65 @@ public class Database implements IUserModel{
         }catch (SQLException e) {
             System.out.println(String.format("Cannot create table User. Error: %s", e.toString()));
         }
+    }
 
+    @Override
+    public void createTablePlace() {
+        try {
+            String sql = IPlaceModel.sqlCreatePlaceTable;
+            PreparedStatement preparedStatement = this.getConnection().prepareStatement(sql);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e) {
+            System.out.println(String.format("Cannot create table Place. Error: %s", e.toString()));
+        }
+    }
+
+    @Override
+    public Place insertPlace(Integer userId, String placeName, String address, double lat, double lon) {
+        Place newPlace = null;
+        try {
+            PreparedStatement preparedStatement = this.getConnection().prepareStatement(
+                    IPlaceModel.sqlInsertPlace, Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setInt(1, userId);
+            preparedStatement.setString(2, placeName);
+            preparedStatement.setString(3, address);
+            preparedStatement.setDouble(4, lat);
+            preparedStatement.setDouble(5, lon);
+            preparedStatement.executeUpdate();
+            Integer placeId = -1;
+            ResultSet rs = preparedStatement.getGeneratedKeys();
+            if (rs.next()){
+                placeId=rs.getInt(1);
+            }
+            newPlace = new Place(placeId, userId, placeName, address,lat,lon);
+        }catch (SQLException e) {
+            System.out.println(String.format("Cannot insert place.Error: %s", e.toString()));
+        } finally {
+            return newPlace;
+        }
+    }
+
+    @Override
+    public ArrayList<Place> queryPlaces(Integer userId, Integer offset, Integer limit) {
+        String sqlCommand = "";
+        ArrayList<Place> places = new ArrayList<Place>();
+        try {
+            sqlCommand = String.format(IPlaceModel.sqlFindPlaces, userId, limit, offset);
+            Statement statement = this.getConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery(sqlCommand);
+            while (resultSet.next()) {
+                Integer placeId = resultSet.getInt("placeId");
+                String placeName = resultSet.getString("placeName");
+                String address = resultSet.getString("address");
+                Double lat = resultSet.getDouble("lat");
+                Double lon = resultSet.getDouble("lon");
+                Place place = new Place(placeId, userId, placeName, address, lat, lon);
+                places.add(place);
+            }
+        }catch (Exception e) {
+            System.out.println("Error login user. Error: "+e.toString());
+        } finally {
+            return places;
+        }
     }
 }

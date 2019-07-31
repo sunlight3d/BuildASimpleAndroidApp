@@ -2,6 +2,8 @@ package database;
 
 import models.Place;
 
+import java.util.ArrayList;
+
 /*
 CREATE TABLE IF NOT EXISTS tblPlace (
     placeId INT AUTO_INCREMENT PRIMARY KEY ,
@@ -13,7 +15,7 @@ CREATE TABLE IF NOT EXISTS tblPlace (
 );
  */
 public interface IPlaceModel {
-    public static final String sqlCreateUserTable = "CREATE TABLE IF NOT EXISTS tblPlace (\n" +
+    public static final String sqlCreatePlaceTable = "CREATE TABLE IF NOT EXISTS tblPlace (\n" +
             "    placeId INT AUTO_INCREMENT PRIMARY KEY ,\n" +
             "    userId INT,\n" +
             "    placeName varchar(500),\n" +
@@ -21,9 +23,10 @@ public interface IPlaceModel {
             "    lat float,\n" +
             "    lon float\n" +
             ")";
-    public static final String sqlInsertUser = "INSERT INTO tblPlace(userId,placeName, address, lat, lon) \n" +
+    public static final String sqlInsertPlace = "INSERT INTO tblPlace(userId,placeName, address, lat, lon) \n" +
             "    VALUES(?,?,?,?,?) \n";//SQL injection
-    public static final String sqlFindPlaces = "SELECT * FROM tblPlace WHERE userId= '%d'";
+    public static final String sqlFindPlaces = "SELECT * FROM tblPlace WHERE userId= '%d' LIMIT %d OFFSET %d";
     public void createTablePlace();
     public Place insertPlace(Integer userId, String placeName, String address, double lat, double lon);
+    public ArrayList<Place> queryPlaces(Integer userId, Integer offset, Integer limit);
 }

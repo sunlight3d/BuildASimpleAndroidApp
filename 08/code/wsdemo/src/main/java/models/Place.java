@@ -1,11 +1,13 @@
 package models;
 
 public class Place {
+    private Integer placeId;
     private Integer userId;
     private String placeName, address;
     private Double lat, lon;
 
-    public Place(Integer userId, String placeName, String address, Double lat, Double lon) {
+    public Place(Integer placeId, Integer userId, String placeName, String address, Double lat, Double lon) {
+        this.placeId = placeId;
         this.userId = userId;
         this.placeName = placeName;
         this.address = address;

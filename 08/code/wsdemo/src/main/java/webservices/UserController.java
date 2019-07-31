@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     //http://localhost:8080/login?email=hoang@gmail.com&password=123456
-    @PostMapping("/login")
+    @PostMapping("/users/login")
     public Hashtable<String, Object> login(
                                             @RequestParam(value = "name", defaultValue="") String name,
                                             @RequestParam String email,
@@ -33,7 +33,7 @@ public class UserController {
     }
     //http://localhost:8080/register?email=hoang@gmail.com&password=123456&userType=default
     //ko co register Facebook !
-    @PostMapping("/register")
+    @PostMapping("/users/register")
     public Hashtable<String, Object> register(@RequestParam String email,
                                               @RequestParam String password,
                                               @RequestParam(value="name", defaultValue="") String name,
