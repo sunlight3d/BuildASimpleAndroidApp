@@ -74,6 +74,11 @@ public class LoginActivity extends Activity implements IMyActivity, IWebService{
     public void setupActions() {
         btnLogin.setOnClickListener(view -> {
             //do something
+            Server server = new Server(this);
+            server.loginWithEmailAndPassword(
+                    txtEmail.getText().toString().trim(),
+                    txtPassword.getText().toString()
+                    );
         });
 
         //validation
