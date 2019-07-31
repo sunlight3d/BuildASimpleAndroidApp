@@ -1,13 +1,10 @@
 package webservices;
 
 import java.util.Hashtable;
-import java.util.concurrent.atomic.AtomicLong;
 
 import database.Database;
-import database.MyException;
 import models.User;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,21 +18,21 @@ public class UserController {
                                             @RequestParam String email,
                                            @RequestParam(value = "password", defaultValue="") String password,
                                            @RequestParam(value = "userType", defaultValue="default") String userType) {
-        Hashtable hashtable = new Hashtable();
         try {
             User loggedInUser = Database.getInstance().login(name, email, password, userType);
-            hashtable.put("result", "ok");
-            hashtable.put("data", loggedInUser);
-            hashtable.put("message", userType.equals("facebook")?"Login Facebook successfully":"Login user successfully");
-        }catch (MyException e) {
-            hashtable.put("message", e.toString());
-            hashtable.put("result", "failed");
-        } finally {
-            return hashtable;
-        }
+            if(loggedInUser == null) {
+                return ResponseObject.create("failed", "", "Wrong email or password");
+            }
+            return ResponseObject.create("ok",
+                    loggedInUser,
+                    userType.equals("facebook")?"Login Facebook successfully":"Login user successfully");
 
+        }catch (Exception e) {
+            return ResponseObject.create("failed", "", "Cannot login, error: "+e.toString());
+        }
     }
     //http://localhost:8080/register?email=hoang@gmail.com&password=123456&userType=default
+    //ko co register Facebook !
     @PostMapping("/register")
     public Hashtable<String, Object> register(@RequestParam String email,
                                               @RequestParam String password,
@@ -43,14 +40,18 @@ public class UserController {
                                               @RequestParam(value="imageUrl", defaultValue="") String imageUrl,
                                               @RequestParam(value="userType", defaultValue="default") String userType
                                               ) {
-        Database.getInstance().register(email, name, password, imageUrl, userType);
-        Hashtable hashtable = new Hashtable();
-        hashtable.put("result", "ok");
-        hashtable.put("data", "");
-        hashtable.put("message", String.format("Register api with email = %s, " +
-                "password = %s, userType = %s, " +
-                "name = %s, imageUrl = %s ", email, password, userType, name, imageUrl));
-        return hashtable;
+        try {
+            User newUser = Database.getInstance().register(email, name, password, imageUrl, userType);
+            if(newUser == null) {
+                return ResponseObject.create("failed", "", "Wrong email or password");
+            }
+            return ResponseObject.create("ok",
+                    newUser,
+                    "Register user successfully");
+
+        }catch (Exception e) {
+            return ResponseObject.create("failed", "", "Cannot register, error: "+e.toString());
+        }
     }
 
 }

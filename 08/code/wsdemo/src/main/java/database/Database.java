@@ -51,7 +51,7 @@ public class Database implements IUserModel{
     }
 
     @Override
-    public User login(String name, String email, String password, String userType) throws MyException {
+    public User login(String name, String email, String password, String userType) {
         User user = null;
         String sqlCommand = "";
         try {
@@ -73,7 +73,7 @@ public class Database implements IUserModel{
                 user = register(email, name,"","", userType);
             }
         }catch (Exception e) {
-            throw new MyException(String.format("Cannot login user.Error: %s", e.toString()));
+            System.out.println("Error login user. Error: "+e.toString());
         } finally {
             return user;
         }

@@ -27,7 +27,7 @@ public interface IUserModel {
 
     public void createTableUser();
     public User register(String email, String name, String password, String imageUrl, String userType);
-    public User login(String name, String email, String password, String userType) throws MyException;
+    public User login(String name, String email, String password, String userType);
 }
 
 
