@@ -4,15 +4,29 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.os.Bundle;
+
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.Fragment;
+import com.google.android.gms.*;
+
 
 import com.example.myapp.com.example.myapp.models.Place;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-public class DetailPlaceActivity extends Activity {
+public class DetailPlaceActivity extends AppCompatActivity implements OnMapReadyCallback {
     public static PlacesActivity placesActivity;
+    private GoogleMap mMap;
 
     public void setSelectedPlace(Place selectedPlace) {
         this.selectedPlace = selectedPlace;
@@ -21,14 +35,15 @@ public class DetailPlaceActivity extends Activity {
     }
 
     private Place selectedPlace;
+    private SupportMapFragment mapView;
     private TextView txtPlaceName;
     private TextView txtDescription;
     private Button btnDelete;
-
+    //API key: AIzaSyDkqCgV1Nl_-lVNiPwIkMy7TVSVNgu0wII
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_place);
         selectedPlace = (Place)getIntent().getExtras().getSerializable("selectedPlace");
@@ -36,11 +51,29 @@ public class DetailPlaceActivity extends Activity {
         txtPlaceName = (TextView) findViewById(R.id.txtPlaceName);
         txtDescription = (TextView) findViewById(R.id.txtDescription);
         btnDelete = findViewById(R.id.btnDelete);
+        SupportMapFragment mapView = (SupportMapFragment)getSupportFragmentManager().
+                findFragmentById(R.id.mapView);
+        try {
+            mapView.getMapAsync(this);
+        }catch (Exception e) {
+
+        }
+
+
 
         txtPlaceName.setText(selectedPlace.getPlaceName());
         txtDescription.setText(selectedPlace.getAddress());
         setupActions();
     }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
+        LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
     private void actionUpdatePlace() {
         //Show EditDialog
         EditPlaceDialog editPlaceDialog = new EditPlaceDialog(this,
