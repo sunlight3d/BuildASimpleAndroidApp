@@ -17,6 +17,7 @@ import com.google.android.gms.*;
 
 
 import com.example.myapp.com.example.myapp.models.Place;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -69,9 +70,13 @@ public class DetailPlaceActivity extends AppCompatActivity implements OnMapReady
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng currentLocation = new LatLng(selectedPlace.getLat(), selectedPlace.getLon());
+        mMap.addMarker(new MarkerOptions().position(currentLocation).title("current Location"));
+
+        CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(currentLocation, 5);
+        mMap.animateCamera(yourLocation);
+
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(currentLocation), 4);
     }
 
     private void actionUpdatePlace() {
