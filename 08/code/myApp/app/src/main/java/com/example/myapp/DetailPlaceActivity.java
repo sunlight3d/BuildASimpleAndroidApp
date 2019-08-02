@@ -17,7 +17,7 @@ public class DetailPlaceActivity extends Activity {
     public void setSelectedPlace(Place selectedPlace) {
         this.selectedPlace = selectedPlace;
         txtPlaceName.setText(selectedPlace.getPlaceName());
-        txtDescription.setText(selectedPlace.getDescription());
+        txtDescription.setText(selectedPlace.getAddress());
     }
 
     private Place selectedPlace;
@@ -38,7 +38,7 @@ public class DetailPlaceActivity extends Activity {
         btnDelete = findViewById(R.id.btnDelete);
 
         txtPlaceName.setText(selectedPlace.getPlaceName());
-        txtDescription.setText(selectedPlace.getDescription());
+        txtDescription.setText(selectedPlace.getAddress());
         setupActions();
     }
     private void actionUpdatePlace() {

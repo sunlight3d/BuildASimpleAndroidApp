@@ -44,8 +44,9 @@ public class PlaceController {
     ) {
         try {
             ArrayList<Place> places = Database.getInstance().queryPlaces(userId, offset, limit);
-            return ResponseObject.create("ok", places,
-                    "Query place successfully");
+            Hashtable<String, Object> x = ResponseObject.create("ok", places,
+                    "Query places successfully");
+            return x;
 
         }catch (Exception e) {
             return ResponseObject.create("failed", "", "Cannot register, error: "+e.toString());

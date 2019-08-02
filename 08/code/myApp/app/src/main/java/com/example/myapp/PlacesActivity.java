@@ -3,18 +3,23 @@ package com.example.myapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.Toast;
 
+import com.example.myapp.Server.Server;
+import com.example.myapp.Server.ServerInterface;
 import com.example.myapp.com.example.myapp.models.Place;
 
 import java.util.ArrayList;
 
-public class PlacesActivity extends Activity {
+public class PlacesActivity extends Activity implements IWebService {
     private RecyclerView placesRecyclerView;
     private RecyclerView.Adapter placesAdapter;
-    private ArrayList<Place> placesData = new ArrayList<Place>();
+    private ArrayList<Place> places = new ArrayList<Place>();
+    private SwipeRefreshLayout mswipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,51 +30,55 @@ public class PlacesActivity extends Activity {
             String email = extras.getString("email");
         }
         placesRecyclerView = findViewById(R.id.placesRecyclerView);
-        //fake data
-
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 11));
-        placesData.add(new Place("ABC park", "An exciting park", 22));
-        placesData.add(new Place("XY place", "An good park", 33));
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 44));
-        placesData.add(new Place("ABC park", "An exciting park", 55));
-        placesData.add(new Place("XY place", "An good park", 66));
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 77));
-        placesData.add(new Place("ABC park", "An exciting park", 88));
-        placesData.add(new Place("XY place", "An good park", 99));
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 111));
-        placesData.add(new Place("ABC park", "An exciting park", 222));
-        placesData.add(new Place("XY place", "An good park", 333));
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 333));
-        placesData.add(new Place("ABC park", "An exciting park", 444));
-        placesData.add(new Place("XY place", "An good park", 555));
-        placesData.add(new Place("Hoan Kiem Lake", "This is a beautiful place", 666));
-        placesData.add(new Place("ABC park", "An exciting park", 777));
-        placesData.add(new Place("XY place", "An good park", 888));
-
-
-        placesAdapter = new PlacesAdapter(placesData);
-        ((PlacesAdapter) placesAdapter).setPlacesActivity(this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext(),
-                LinearLayoutManager.VERTICAL, false);
+        mswipeRefreshLayout = findViewById(R.id.mswipeRefreshLayout);
+        getPlacesFromServer();
+        mswipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                //Log.d("aa", "pull to RRR");
+                mswipeRefreshLayout.setRefreshing(true);
+                PlacesActivity.this.getPlacesFromServer();
+            }
+        });
+    }
+    public void getPlacesFromServer() {
+        Server server = new Server(this);
+        server.queryPlaces(13,0,10);
+    }
+    public void reloadData() {
+        placesAdapter = new PlacesAdapter(places);
         placesRecyclerView.setAdapter(placesAdapter);
+        ((PlacesAdapter) placesAdapter).setPlacesActivity(this);
+        RecyclerView.LayoutManager layoutManager = new
+                LinearLayoutManager(getApplicationContext(),
+                LinearLayoutManager.VERTICAL, false);
+
         placesRecyclerView.setLayoutManager(layoutManager);
     }
+
+    @Override
+    public void getResponse(Object responseObject, String errorMessage) {
+        this.places = (ArrayList<Place>)responseObject;
+        reloadData();
+        mswipeRefreshLayout.setRefreshing(false);
+    }
+
     public void navigateToDetailPlace(Integer position) {
         Intent intent = new Intent(PlacesActivity.this, DetailPlaceActivity.class);
-        Place selectedPlace = placesData.get(position);
+        Place selectedPlace = places.get(position);
         intent.putExtra("selectedPlace", selectedPlace);
         startActivity(intent);
         DetailPlaceActivity.placesActivity = this;
     }
     public void deletePlace(final Integer placeId) {
-        placesData.removeIf(place -> place.getPlaceId().equals(placeId));
+        places.removeIf(place -> place.getPlaceId().equals(placeId));
         placesAdapter.notifyDataSetChanged();
     }
     public void updatePlace(Place updatedPlace) {
-        placesData.forEach(place -> {
+        places.forEach(place -> {
             if(place.getPlaceId().equals(updatedPlace.getPlaceId())){
                 place.setPlaceName(updatedPlace.getPlaceName());
-                place.setDescription(updatedPlace.getDescription());
+                place.setAddress(updatedPlace.getAddress());
             }
         });
     }

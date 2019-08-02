@@ -10,7 +10,8 @@ import com.example.myapp.com.example.myapp.models.Place;
 
 import java.util.ArrayList;
 
-public class PlacesAdapter extends RecyclerView.Adapter<PlaceItemView> {
+public class PlacesAdapter extends 
+        RecyclerView.Adapter<PlaceItemView> {
     private ArrayList<Place> placesData;
     private PlacesActivity placesActivity;
     //constructor
@@ -35,9 +36,9 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlaceItemView> {
     public void onBindViewHolder(@NonNull PlaceItemView placeItemView, int i) {
         Place selectedPlace = placesData.get(i);
         String placeName = selectedPlace.getPlaceName();
-        String description = selectedPlace.getDescription();
+        String address = selectedPlace.getAddress();
         placeItemView.txtPlaceName.setText(placeName);
-        placeItemView.txtDescription.setText(description);
+        placeItemView.txtDescription.setText(address);
     }
 
     @Override

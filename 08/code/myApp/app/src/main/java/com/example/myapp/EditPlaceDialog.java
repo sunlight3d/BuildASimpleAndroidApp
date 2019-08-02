@@ -14,7 +14,7 @@ public class EditPlaceDialog extends Dialog {
     private Place selectedPlace;
     //UI
     private EditText txtPlaceName;
-    private EditText txtDescription;
+    private EditText txtAddress;
     private Button btnSave;
 
     EditPlaceDialog(Context context, PlacesActivity placesActivity,
@@ -28,16 +28,16 @@ public class EditPlaceDialog extends Dialog {
     }
     private void setupUI() {
         txtPlaceName = (EditText) findViewById(R.id.txtPlaceName);
-        txtDescription = (EditText) findViewById(R.id.txtDescription);
+        txtAddress = (EditText) findViewById(R.id.txtDescription);
         btnSave = (Button)findViewById(R.id.btnSave);
 
         txtPlaceName.setText(selectedPlace.getPlaceName());
-        txtDescription.setText(selectedPlace.getDescription());
+        txtAddress.setText(selectedPlace.getAddress());
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 selectedPlace.setPlaceName(txtPlaceName.getText().toString().trim());
-                selectedPlace.setDescription(txtDescription.getText().toString().trim());
+                selectedPlace.setAddress(txtAddress.getText().toString().trim());
                 EditPlaceDialog.this.placesActivity.updatePlace(selectedPlace);
                 EditPlaceDialog.this.detailPlaceActivity.setSelectedPlace(selectedPlace);
                 EditPlaceDialog.this.dismiss();

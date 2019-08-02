@@ -1,6 +1,8 @@
 package models;
 
-public class Place {
+import java.io.Serializable;
+
+public class Place implements Serializable {
     private Integer placeId;
     private Integer userId;
     private String placeName, address;
@@ -13,6 +15,14 @@ public class Place {
         this.address = address;
         this.lat = lat;
         this.lon = lon;
+    }
+
+    public Integer getPlaceId() {
+        return placeId;
+    }
+
+    public void setPlaceId(Integer placeId) {
+        this.placeId = placeId;
     }
 
     public Integer getUserId() {
