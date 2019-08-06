@@ -1,12 +1,17 @@
 package database;
 
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.spec.KeySpec;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Properties;
 
 import models.Place;
 import models.User;
+
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 
 public class Database implements IUserModel, IPlaceModel{
 
@@ -80,7 +85,22 @@ public class Database implements IUserModel, IPlaceModel{
             return user;
         }
     }
+    private String generatePassword(String password) {
+        SecureRandom random = new SecureRandom();
+        byte[] salt = new byte[16];
+        random.nextBytes(salt);
+        KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 65536, 128);
+        String hashPassword = "";
+        try {
+            SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
+            byte[] hash = factory.generateSecret(spec).getEncoded();
+            hashPassword = new String(hash);
+        }catch (NoSuchAlgorithmException e) {
 
+        } finally {
+            return hashPassword;
+        }
+    }
     @Override
     public User register(String email, String name, String password, String imageUrl, String userType) {
         User newUser = null;
@@ -89,7 +109,7 @@ public class Database implements IUserModel, IPlaceModel{
                     IUserModel.sqlInsertUser, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, email);
             preparedStatement.setString(2, name);
-            preparedStatement.setString(3, password);
+            preparedStatement.setString(3, generatePassword(password));
             preparedStatement.setString(4, imageUrl);
             preparedStatement.setString(5, userType);
             preparedStatement.executeUpdate();
