@@ -6,7 +6,7 @@ import models.User;
 CREATE TABLE IF NOT EXISTS tblUser (
     userId INT AUTO_INCREMENT PRIMARY KEY ,
     name varchar(500),
-    email varchar(500) NOT NULL,,
+    email varchar(500) NOT NULL,
     password varchar(500) NOT NULL,
     userType varchar(255) DEFAULT 'default'
 );

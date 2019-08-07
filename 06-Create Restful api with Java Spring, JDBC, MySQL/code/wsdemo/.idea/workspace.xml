@@ -2,257 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c9d878-69ee-4cac-bf56-bc9c8bea99e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/controllers/ResponseObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_agent_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_test_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_tx_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_web_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Gradle__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_10_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_orm_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_test_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_tx_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/java/webservices/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../06-Create Restful Api with Spring, JPA and MySQL/wsdemo/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/google-services.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/androidTest/java/com/example/myapp/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/DetailPlaceActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/EditPlaceDialog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/IMyActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/IWebService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/LoginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlaceItemView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlacesActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/PlacesAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/Server/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/Server/ServerInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/com/example/myapp/models/Place.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/java/com/example/myapp/com/example/myapp/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_detail_place.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/activity_places.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/edit_place.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/layout/place_item_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxhdpi/my_room.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/app/src/test/java/com/example/myapp/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07-Intergrate Login Api with Android App - LoginActivity/code/myApp/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../08/code/wsdemo/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../08/code/wsdemo/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08/code/wsdemo/src/main/java/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/controllers/PlaceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/database/IPlaceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/webservices/models/Place.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../08/code/wsdemo/src/main/java/database/IUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../08/code/wsdemo/src/main/java/database/IUserModel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -278,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-7">
               <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
             </state>
           </provider>
@@ -287,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state>
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -299,8 +56,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+            <state relative-caret-position="107">
+              <caret line="28" column="46" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/PlaceController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="793">
+              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -311,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/ResponseObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state>
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -320,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state>
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#473#474#0" expanded="true" />
                 <element signature="e#500#501#0" expanded="true" />
@@ -355,24 +124,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+            <state relative-caret-position="363">
+              <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#1709#1710#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
+                <element signature="e#1897#1898#0" expanded="true" />
+                <element signature="e#1975#1976#0" expanded="true" />
+                <element signature="e#5845#5852#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservices/models/Place.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#723#724#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+                <element signature="e#991#992#0" expanded="true" />
+                <element signature="e#1017#1018#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1085#1086#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="-7">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/IPlaceModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -387,6 +201,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hashPassword</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
@@ -397,10 +216,13 @@
         <option value="$PROJECT_DIR$/src/main/java/webservices/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservices/models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/webservices/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservices/controllers/ResponseObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/models/Place.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/database/IPlaceModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservices/controllers/PlaceController.java" />
       </list>
     </option>
   </component>
@@ -408,7 +230,7 @@
     <option name="x" value="7" />
     <option name="y" value="23" />
     <option name="width" value="1934" />
-    <option name="height" value="1054" />
+    <option name="height" value="1062" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -418,8 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -471,10 +291,21 @@
               <item name="webservices" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wsdemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wsdemo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -533,9 +364,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="23" width="1934" height="1054" extended-state="0" />
+    <frame x="7" y="23" width="1934" height="1062" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13477801" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15274842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -544,15 +376,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19022869" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31600833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27938145" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.17835051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.17983368" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.17938145" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -564,30 +396,35 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/webservices/database/Database.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-7">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/ResponseObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/webservices/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state>
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#473#474#0" expanded="true" />
             <element signature="e#500#501#0" expanded="true" />
@@ -617,27 +454,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/ResponseObject.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/util/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="213">
+          <caret line="547" column="22" selection-start-line="547" selection-start-column="22" selection-end-line="547" selection-end-column="22" />
+          <folding>
+            <element signature="e#20766#20767#0" expanded="true" />
+            <element signature="e#20846#20847#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/models/Place.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="-7">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/IPlaceModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        <state relative-caret-position="460">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -646,22 +526,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        <state relative-caret-position="363">
+          <caret line="154" column="38" selection-start-line="154" selection-start-column="38" selection-end-line="154" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1975#1976#0" expanded="true" />
+            <element signature="e#5845#5852#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/database/IUserModel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservices/controllers/PlaceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="793">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

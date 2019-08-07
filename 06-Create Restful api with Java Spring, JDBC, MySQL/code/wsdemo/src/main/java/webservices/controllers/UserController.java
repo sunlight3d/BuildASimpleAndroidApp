@@ -14,15 +14,24 @@ public class UserController {
     //http://localhost:8080/users/login?name=Nguyen Duc Hoang&email=hoang@gmail.com&password=123456&userType=
     @PostMapping("/users/login")
     public Hashtable<String, Object> login(
-                            @RequestParam(value = "name", defaultValue = "") String name,
                             String email,
                             @RequestParam(value = "password", defaultValue="") String password,
                             @RequestParam(value = "userType", defaultValue="default")String userType) {
-        String inputParams = "name = "+name+"email = "+email+"password ="+password+"userType ="+userType;
-        //How to return a JSON object ?
-        Hashtable<String, Object> hashtable = new Hashtable<>();
-        //We must query database, get data, then response to client...
-        return hashtable;
+
+        try {
+            User loggedInUser = Database.getInstance().login(email, password, userType);
+            if(loggedInUser == null) {
+                return ResponseObject.create("failed", "", "Wrong email or password");
+            }
+            return ResponseObject.create(
+                    ResponseObject.SUCCESS,
+                    loggedInUser,
+                    userType.equals("facebook") ? "Login Facebook successfully" : "Login user successfully"
+            );
+        }catch (Exception e) {
+            return ResponseObject.create(ResponseObject.FAILED,"","Cannot login, error: "+e.toString());
+        }
+
     }
     //Register user
     @PostMapping("/users/register")

@@ -12,9 +12,10 @@ CREATE TABLE IF NOT EXISTS tblUser (
 );
  */
 public interface IUserModel {
-    public static final String sqlInsert = "INSERT INTO tblUser(email,name, password, imageUrl, userType) \n" +
+    public static String sqlInsert = "INSERT INTO tblUser(email,name, password, imageUrl, userType) \n" +
                                                " VALUES(?,?,?,?,?) \n";//SQL injection
-    public static final String sqlLogin = "SELECT * FROM tblUser WHERE email= '%s' and password = '%s'";
+    public static String sqlLogin = "SELECT * FROM tblUser WHERE email= '%s' and password = '%s'";
+    public static String sqlLoginFacebook = "SELECT * FROM tblUser WHERE email= '%s' and userType = 'facebook'";
     public User register(String email, String name, String password, String imageUrl, String userType);
     public User login(String email, String password, String userType);
 }
