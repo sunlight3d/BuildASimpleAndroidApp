@@ -23,9 +23,9 @@ public interface IPlaceModel {
             "    lat float,\n" +
             "    lon float\n" +
             ")";
-    public static final String sqlInsertPlace = "INSERT INTO tblPlace(userId,placeName, address, lat, lon) \n" +
+    public static String sqlInsertPlace = "INSERT INTO tblPlace(userId,placeName, address, lat, lon) \n" +
             "    VALUES(?,?,?,?,?) \n";//SQL injection
-    public static final String sqlFindPlaces = "SELECT * FROM tblPlace WHERE userId= '%d' LIMIT %d OFFSET %d";
+    public static String sqlFindPlaces = "SELECT * FROM tblPlace WHERE userId= '%d' LIMIT %d OFFSET %d";
     public void createTablePlace();
     public Place insertPlace(Integer userId, String placeName, String address, double lat, double lon);
     public ArrayList<Place> queryPlaces(Integer userId, Integer offset, Integer limit);

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New Note"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:background="@color/yellow">
+
+    </TextView>
+    <EditText
+        android:id="@+id/txtName"
+        android:hint="Enter your taskNote"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:lines="2"
+        android:inputType="text" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:text="Important"
+        android:id="@+id/checkBoxImportant"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <Button
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Button>
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent">
+
+        </Space>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnCommit"
+            android:layout_width="match_parent"
+            android:text="Commit"
+            android:layout_height="match_parent">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>
