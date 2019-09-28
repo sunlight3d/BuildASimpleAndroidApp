@@ -3,42 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorLightCyan"
     android:layout_height="110dp">
 
     <View
-        android:id="@+id/viewLeft"
+        android:id="@+id/viewRight"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#E91E63" />
+        android:background="@color/colorLightOrange" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Di choi Di choiDi choi"
+        android:layout_marginTop="10dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:text="Di choi Di choiDi choi"
+        android:textColor="#ffffff"
         android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@id/viewLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewRight"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtCreatedDate"
         android:layout_width="0dp"
-        android:textSize="14sp"
         android:layout_height="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Ngay A thang B"
+        android:layout_marginBottom="20dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintStart_toStartOf="@id/txtName"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:text="Ngay A thang B"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/txtName">
 
     </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
