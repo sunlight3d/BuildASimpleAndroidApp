@@ -26,7 +26,7 @@ public class CustomAdapter extends CursorAdapter {
     public void bindView(View view, Context context, Cursor cursor) {
         TextView txtName = view.findViewById(R.id.txtName);
         TextView txtCreatedDate = view.findViewById(R.id.txtCreatedDate);
-        View viewLeft = view.findViewById(R.id.viewLeft);
+        View viewLeft = view.findViewById(R.id.viewRight);
         String content = cursor.getString(
                 cursor.getColumnIndexOrThrow(TaskNoteTable.NoteEntry.COLUMN_CONTENT));
 

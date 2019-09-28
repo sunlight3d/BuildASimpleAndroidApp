@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         customAdapter = new CustomAdapter(this, mCursor);
         listView.setAdapter(customAdapter);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("TaskNote Management");
         this.setSupportActionBar(toolbar);
 
         listView.setOnItemClickListener((AdapterView<?> parent, View view, int position, long id) -> {
