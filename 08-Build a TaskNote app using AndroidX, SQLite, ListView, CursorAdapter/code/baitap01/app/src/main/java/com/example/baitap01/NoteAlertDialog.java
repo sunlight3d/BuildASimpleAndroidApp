@@ -47,9 +47,12 @@ public class NoteAlertDialog extends AlertDialog {
             this.dismiss();
         });
         btnCommit.setOnClickListener(v -> {
-            String name = txtName.getText().toString().trim();
+            String content = txtName.getText().toString().trim();
             Boolean isImportant = checkBoxImportant.isChecked();
-            TaskNote newTaskNote = new TaskNote(-1, name,
+            if(content.equals("")) {
+                //show alert
+            }
+            TaskNote newTaskNote = new TaskNote(-1, content,
                     isImportant,
                     new Date());
             if(DATA_TYPE == INSERT) {
