@@ -5,14 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <EditText
+        android:id="@+id/txtSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
     <GridView
         android:id="@+id/gridview"
+        app:layout_constraintTop_toBottomOf="@id/txtSearch"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:numColumns="2"
-        android:verticalSpacing="2dp"
-        android:horizontalSpacing="2dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
